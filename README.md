@@ -27,3 +27,37 @@ The goal of this MVP is to validate a **safe, state-based dating flow** from mat
 - Mark a date as **checked in** (demo endpoint)
 
 Date statuses:
+pending → accepted → checked_in
+
+
+### Stability
+- App navigation works
+- No crashes during core flows
+- Backend state updates correctly
+
+---
+
+## 🚧 Not Implemented (Planned / Post-MVP)
+
+The following features are **intentionally NOT implemented** in this MVP:
+- Restaurant QR codes
+- Admin restaurant dashboards
+- Identity verification
+- Selfie verification
+- Location tracking
+- Machine learning matching
+
+These are planned extensions beyond MVP validation.
+
+---
+
+## How to Run
+
+### Backend
+```bash
+cd dating-app-backend
+python3 -m uvicorn main:app --reload
+
+### Frontend
+cd dating-app-frontend
+npx expo start
